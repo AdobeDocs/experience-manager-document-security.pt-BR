@@ -5,9 +5,9 @@ uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
 source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->[Introdução ao AEM Document Security Extension for Microsoft Office](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
+>[Introdução ao AEM Document Security Extension para Microsoft Office](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
 >
->Usando o Document Security Extension for Microsoft Office, é possível aplicar configurações de confidencialidade predefinidas a seus arquivos do Microsoft Office.
+>Ao usar a Document Security Extension para Microsoft Office, é possível aplicar configurações de confidencialidade predefinidas aos seus arquivos do Microsoft Office.
 
 >[!NOTE]
 >
