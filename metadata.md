@@ -8,9 +8,9 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-document-security.pt-BR
 index: true
 recommendations: noDisplay
-source-git-commit: 8b36d6dd8755d779c5e7f258df3ee2c68a5d1a5e
+source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ O arquivo metadata.md inclui metadados de nível de repositório que passam para
 | solution-icon | Exibe o ícone da solução ao lado do título da solução. Ainda não implementado |
 | getting-started-url | Link para a página de introdução |
 | tutorials-url | Link para tutoriais em vídeo — tutoriais de ajuda ou tutoriais de KT |
-| mini-toc-levels | Calcula o número de níveis de cabeçalho exibidos no painel direito. O padrão é 2 |
+| mini-toc-levels | Determina o número de níveis de cabeçalho exibidos no painel direito. O padrão é 2 |
 | git-repo | Especifica o local do repositório principal para uso interno |
 
 No arquivo TOC.md
