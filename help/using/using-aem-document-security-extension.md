@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6136'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 70%
 
 Controle como os recipients usam seus arquivos protegidos por políticas, independentemente da abrangência da distribuição de arquivos.
 
-Usando o Document Security Extension for Microsoft® Office, é possível executar estas tarefas:
+Usando o Document Security Extension para Microsoft® Office, é possível executar estas tarefas:
 
 * Configurar a conexão com a Segurança de documentos
 * Aplicar uma política a um arquivo
-* Abrir as páginas da Web de Segurança de documentos para criar e gerenciar políticas de usuário
+* Abrir as páginas da web da Segurança de documentos para criar e gerenciar políticas de usuários
 * Remover a proteção por política de um arquivo
 * Alterar a política aplicada a um arquivo
-* Abrir as páginas da Web de Segurança de documentos para revogar o acesso aos arquivos ou alterar a política do arquivo
-* Abrir as páginas da Web de Segurança de documentos para exibir o histórico de auditoria do arquivo
+* Abrir as páginas da web da Segurança de documentos para revogar o acesso aos arquivos ou alterar a política do arquivo
+* Abrir as páginas da web da Segurança de documentos para exibir o histórico de auditoria do arquivo
 
 ### Conexão com um servidor de Segurança de documentos {#connect-to-a-document-security-server}
 
-Se sua intenção for aplicar políticas a arquivos, é preciso configurar as definições de conexão para a Segurança de documentos. Dependendo de como o Document Security Extension for Microsoft® Office estiver instalado, talvez você já tenha configurações de conexão padrão. Você pode adicionar configurações de conexão para uma ou mais instâncias da Segurança de documentos. E pode também obter informações do servidor do administrador de Segurança de documentos.
+Se sua intenção for aplicar políticas a arquivos, é preciso configurar as definições de conexão para a Segurança de documentos. Dependendo de como o Document Security Extension para Microsoft® Office foi instalado, talvez você já tenha as configurações de conexão padrão. Você pode adicionar configurações de conexão para uma ou mais instâncias da Segurança de documentos. E pode também obter informações do servidor do administrador de Segurança de documentos.
 
-Defina o servidor que deseja usar para proteger arquivos ou gerenciar seus arquivos protegidos como o servidor padrão. Ao aplicar uma política a um novo arquivo ou abrir as páginas da Web de Segurança de documentos, o Document Security Extension for Microsoft® Office se conecta ao servidor padrão. Se você proteger arquivos usando mais de uma instância de Segurança de documentos, deverá alterar a configuração padrão do servidor ao alternar entre servidores. É possível abrir arquivos protegidos por qualquer instância de Segurança de documentos, desde que você tenha autorização para abrir o arquivo.
+Defina o servidor que deseja usar para proteger arquivos ou gerenciar seus arquivos protegidos como o servidor padrão. Ao aplicar uma política a um arquivo novo ou abrir páginas da web usando a Segurança de documentos, o Document Security Extension para Microsoft® Office se conecta ao servidor padrão. Se você proteger arquivos usando mais de uma instância de Segurança de documentos, deverá alterar a configuração padrão do servidor ao alternar entre servidores. É possível abrir arquivos protegidos por qualquer instância de Segurança de documentos, desde que você tenha autorização para abrir o arquivo.
 
-Se o servidor de Segurança de documentos utilizar autenticação baseada em certificados, você deverá instalar o certificado recebido no computador local. É necessário escolher uma autenticação de certificado e fornecer o certificado que deseja usar para autenticação.
+Se o servidor de Segurança de documentos utilizar uma autenticação baseada em certificado, será necessário instalar o certificado recebido em seu computador local. É necessário escolher a autenticação de certificado e fornecer o certificado que deseja usar para a autenticação.
 
-Depois de definir as configurações de conexão para uma instância de Segurança de documentos em um aplicativo do Microsoft® Office, ela é configurada para o Word, Excel e PowerPoint.
+Após definir a configuração de conexão para uma instância da Segurança de documentos em um aplicativo do Microsoft® Office, ela é configurada para o Word, Excel e PowerPoint.
 
 #### Instalação do certificado do lado do cliente {#install-the-client-side-certificate}
 
@@ -72,11 +72,11 @@ Se for necessário acessar as páginas da Web usando a Segurança de documentos 
 
 >[!NOTE]
 >
->Se não conseguir se conectar ao servidor, tente abrir as páginas da Web de Segurança de documentos no Internet Explorer. Se não conseguir se conectar ao servidor usando o Internet Explorer ou se uma caixa de diálogo exibir um aviso sobre o certificado do servidor, o Document Security Extension for Microsoft® Office não poderá se conectar ao servidor. Entre em contato com o administrador do servidor para obter assistência.
+>Se não conseguir se conectar ao servidor, tente abrir as páginas da web da Segurança de documentos no Internet Explorer. Se não conseguir se conectar ao servidor usando o Internet Explorer ou se uma caixa de diálogo exibir um aviso sobre o certificado do servidor, o Document Security Extension para Microsoft® Office não poderá se conectar ao servidor. Entre em contato com a administração do servidor para obter assistência.
 
 >[!NOTE]
 >
->Se não conseguir se conectar à Segurança de documentos, será exibida uma mensagem informando que &quot;O nome de usuário e a senha estão incorretos. Verifique as configurações e tente novamente&quot;. Esta mensagem poderá ser exibida se você não conseguir se conectar por outro motivo. Se você estava se conectando ao servidor pela primeira vez, verifique se definiu o nome do servidor e a porta corretamente.
+>Se não conseguir se conectar à Segurança de documentos, será exibida uma mensagem informando que “O nome de usuário e a senha estão incorretos. Verifique as configurações e tente novamente.” Esta mensagem poderá ser exibida se você não conseguir se conectar por outro motivo. Se estiver se conectando ao servidor pela primeira vez, verifique se definiu o nome do servidor e a porta corretamente.
 
 #### Especificação do servidor padrão {#specify-the-default-server}
 
@@ -94,11 +94,11 @@ Se for necessário acessar as páginas da Web usando a Segurança de documentos 
 * Autenticação estendida usando um URL personalizado
 * Fluxo de trabalho padrão de autenticação estendida com provedores de identidade de terceiros configurados no servidor do AEM Forms no JEE
 * Fluxo de trabalho personalizado de autenticação estendida com provedores de identidade de terceiros configurados no servidor do AEM Forms no JEE
-* Autenticação estendida usando uma página personalizada para listar Autenticações SAML
+* Autenticação estendida usando uma página personalizada para listar autenticações SAML
 
 #### Autenticação estendida usando o URL padrão do AEM Forms {#extended-authentication-using-default-aem-forms-url}
 
-Você pode usar o URL padrão do AEM Forms para autenticação estendida. A página de aterrissagem padrão contém a marca Adobe. Além disso, as configurações padrão do AEM Forms são usadas ao usar o URL padrão do AEM Forms para autenticação estendida.
+É possível usar o URL padrão do AEM Forms para autenticação estendida. A página de aterrissagem padrão contém a marca Adobe. Além disso, as configurações padrão do AEM Forms são usadas ao utilizar o URL padrão do AEM Forms para autenticação estendida.
 
 Execute as seguintes etapas para habilitar a autenticação estendida com o URL padrão de aterrissagem da Adobe:
 
@@ -111,9 +111,9 @@ Execute as seguintes etapas para habilitar a autenticação estendida com o URL 
 
    >[!NOTE]
    >
-   >Use um nome de host totalmente qualificado no URL. O Adobe recomenda o uso do protocolo HTTPS.
+   >Use um nome de host totalmente qualificado no URL. A Adobe recomenda o uso do protocolo HTTPS.
 
-   Agora, a Segurança de documentos do AEM Forms está configurada para usar autenticação estendida com o URL padrão de aterrissagem do AEM Forms.
+   Agora, a Segurança de documentos do AEM Forms está configurada para usar a autenticação estendida com o URL padrão de destino do AEM Forms.
 
    ![](assets/third-party-authentication.png)
 
@@ -131,14 +131,14 @@ Para ativar a autenticação estendida com um URL de destino personalizado:
 1. Implante o arquivo WAR de autenticação personalizada no servidor do AEM Forms.
 1. Abra a interface do Administrador do AEM Forms.
 1. Navegue até Serviços > Segurança de documentos > Configuração > Configuração do servidor.
-1. Ative a opção Permitir autenticação estendida e especifique um URL de aterrissagem personalizado da autenticação estendida.
-1. Adicione as seguintes entradas ao arquivo `config.xml` sob o nó SSO após a entrada *&lt;node name=&quot;AllowedUrls&quot;>*:
+1. Habilite a opção Permitir autenticação estendida e especifique o URL de destino personalizado da autenticação estendida.
+1. Adicione as seguintes entradas ao arquivo `config.xml` no nó SSO após a entrada *&lt;node name=&quot;AllowedUrls&quot;>*:
 
    >[!NOTE]
    >
    >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
 
-   Para obter informações detalhadas sobre a atualização do arquivo config.xml, consulte [Editar manualmente o arquivo de configuração de segurança de documentos](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file).
+   Para obter informações detalhadas sobre a atualização do arquivo config.xml, consulte [Editar manualmente o arquivo de configuração de segurança de documentos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file).
 
    Agora, a Segurança de documentos do AEM Forms está configurada para usar autenticação estendida com um URL de aterrissagem personalizado
 
@@ -178,7 +178,7 @@ Se você ainda não tiver uma conta de Segurança de documentos, a Segurança de
 * Um usuário da Segurança de documentos que deseja enviar a você um arquivo protegido por política o adiciona a uma política.
 * O administrador da Segurança de documentos cria uma conta para você.
 
-Depois de registrar e ativar sua conta, você pode usar arquivos protegidos por política para os quais recebeu autorização para uso por meio de uma política.
+Após registrar e ativar sua conta, é possível usar arquivos protegidos por política para os quais recebeu autorização para uso por meio de uma política.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Se você receber um convite de registro por email da Segurança de documentos, p
 1. Abra o email de confirmação de registro da Segurança de documentos.
 1. Clique no URL que aparece na mensagem.
 1. Clique no link para a página de Logon.
-1. Na caixa **Nome de usuário**, digite o endereço de email em que você está registrado com a Segurança de documentos. Esse endereço de email é o nome de usuário padrão da Segurança de documentos.
+1. Na caixa **Nome de usuário**, digite o endereço de email com o qual você está registrado na Segurança de documentos. Esse endereço de email é o nome de usuário padrão da Segurança de documentos.
 1. Na caixa **Senha**, digite a senha que você criou ao se registrar.
 1. Clique em **Logon**.
 
@@ -323,13 +323,13 @@ Algumas das configurações de política disponíveis para criar políticas nas 
  </tbody>
 </table>
 
-Para obter mais informações sobre como criar e gerenciar políticas, consulte [Ajuda ao usuário final de Segurança de documentos](https://help.adobe.com/pt_BR/AEMForms/6.1/RMHelp/).
+Para obter mais informações sobre como criar e gerenciar políticas, consulte [Ajuda ao usuário final de Segurança de documentos](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
 ### Aplicação de políticas {#applying-policies}
 
-É possível aplicar qualquer política disponível a um arquivo, incluindo políticas que você criou e políticas que fazem parte dos conjuntos de políticas aos quais você tem acesso. Antes de aplicar uma política, é preciso salvar o arquivo.
+É possível aplicar qualquer política disponível a um arquivo, incluindo políticas que você criou e as que fazem parte dos conjuntos de políticas aos quais você tem acesso. Antes de aplicar uma política, é preciso salvar o arquivo.
 
-Depois de aplicar uma política, ela é adicionada à lista Recentemente usada no menu Segurança de documentos do AEM para facilitar a aplicação das políticas usadas com mais frequência. A lista Recentemente usado mostra políticas somente para o servidor ao qual você está conectado ou para o servidor padrão se você não tiver feito logon em outra instância de Segurança de documentos.
+Após aplicar uma política, ela é adicionada à lista Usado recentemente no menu de Segurança de documentos do AEM para facilitar a aplicação das políticas usadas com mais frequência. A lista Usado recentemente mostra políticas somente para o servidor ao qual você está conectado, ou para o servidor padrão, caso não tenha feito logon em outra instância da Segurança de documentos.
 
 >[!NOTE]
 >
@@ -346,46 +346,46 @@ Depois de aplicar uma política, ela é adicionada à lista Recentemente usada n
 
 #### Aplicação de uma política usada recentemente {#apply-a-recently-used-policy}
 
-1. Em Document Security Extension for Microsoft® Office 2010 e 2013, na guia **Segurança de Documentos**, selecione **Proteger** > *[Nome da Política]*.
+1. No Document Security Extension para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Proteger** >*[Nome da política]*.
 1. Salve o arquivo.
 
 ## Trabalho com os arquivos protegidos por política {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
-O editor do arquivo é proprietário da propriedade intelectual em arquivos protegidos por política, que a Segurança de documentos protege.
+O editor do arquivo tem a propriedade intelectual em arquivos protegidos por política que é protegida pela Segurança de documentos.
 
-É possível usar arquivos protegidos por política, independentemente se for interno ou externo à organização do editor de arquivos. A Segurança de documentos deve reconhecer você para abrir arquivos protegidos por política. Deve fazer isso por meio do LDAP/Ative Diretory. Ou deve fazer isso como um usuário local para o LiveCycle/AEM forms no JEE, ou por meio de registro após um convite.
+É possível usar arquivos protegidos por política, independentemente se você for do interior da organização do editor de arquivos ou não. A Segurança de documentos deve reconhecer você para abrir arquivos protegidos por política. Ela o faz por meio do LDAP/Active Diretory. Ou deve fazê-lo como um usuário local do LiveCycle/AEM forms no JEE, ou por meio de registro após um convite.
 
-Se você receber um arquivo protegido por política e não tiver uma conta de Segurança de documentos, entre em contato com o remetente para obter assistência. Da mesma forma, se você receber um convite para se registrar, entre em contato com o remetente para obter ajuda.
+Se você receber um arquivo protegido por política e não tiver uma conta da Segurança de documentos, entre em contato com o remetente para obter assistência. Da mesma forma, se você receber um convite para se registrar, entre em contato com o remetente para obter ajuda.
 
 ### Trabalhar com arquivos protegidos por política no Microsoft® Office {#working-with-policy-protected-files-in-microsoft-office}
 
-O Document Security Extension for Microsoft® Office restringe determinadas funcionalidades do Word, Excel e PowerPoint para proteger a propriedade intelectual do editor de arquivos. Se você não tiver permissão para alterar o arquivo, não poderá salvar modificações nele.
+O Document Security Extension para Microsoft® Office restringe determinadas funcionalidades do Word, Excel e PowerPoint para proteger a propriedade intelectual do editor do arquivo. Se você não tiver permissão para alterar o arquivo, não poderá salvar modificações nele.
 
-Se estiver trabalhando com um arquivo protegido por política, alguns recursos do produto podem não estar disponíveis ou podem não funcionar normalmente. Se um arquivo desprotegido for aberto, a maioria dos recursos será ativada, exceto os recursos que permitem importar ou copiar conteúdo de um arquivo protegido por política sem permissões de cópia ou exportação.
+Se estiver trabalhando com um arquivo protegido por política, alguns recursos do produto podem não estar disponíveis ou podem não funcionar normalmente. Se um arquivo desprotegido for aberto, a maioria dos recursos será habilitada, exceto os que permitem importar ou copiar conteúdo de um arquivo protegido por política sem permissões de cópia ou exportação.
 
 >[!NOTE]
 >
->Ao usar aplicativos do Office compatíveis com o Document Security Extension, é recomendado desativar a configuração do DEP do Windows. Para garantir a inicialização sem problemas dos aplicativos do Office em computadores com o Document Security Extension e o McAfee VirusScan com o On-Access Scan ativado, desative a opção Proteção de sobrecarga de buffer, no console do McAfee VirusScan. Esse ajuste ajuda a evitar possíveis conflitos.
+>Ao usar aplicativos do Office compatíveis com o Document Security Extension, é recomendado desativar a configuração do DEP do Windows. Para garantir que os aplicativos do Office sejam inicializados sem problemas em um computador que contenha o Document Security Extension e o McAfee VirusScan com o On-Access Scan habilitado, desabilite a opção Proteção de sobrecarga de buffer no console do McAfee VirusScan. Esse ajuste ajuda a evitar possíveis conflitos.
 
-Se um recurso não estiver disponível, o nome do comando no menu e o botão da barra de ferramentas relacionado não estarão disponíveis. No Document Security Extension for Microsoft® Office, ao passar o ponteiro do mouse sobre o comando ou botão, uma dica de ferramenta indica que a Segurança de documentos não disponibiliza o comando.
+Se um recurso não estiver disponível, o nome do comando no menu e o botão da barra de ferramentas relacionado não estarão disponíveis. No Document Security Extension para Microsoft® Office, ao passar o ponteiro do mouse sobre o comando ou botão, uma dica de ferramenta indica que o comando está indisponível devido à Segurança de documentos.
 
 ### Acesso a arquivos protegidos por política {#opening-policy-protected-files}
 
-É possível abrir arquivos protegidos por política usando os mesmos métodos usados para abrir qualquer outro arquivo. Se você ainda não tiver feito logon na Segurança de documentos, será solicitado a fazê-lo. Ou seja, se você não estiver conectado à Internet e puder abrir o arquivo offline. Se você cancelar o processo de logon, o acesso será negado.
+É possível abrir arquivos protegidos por política usando os mesmos métodos usados para abrir qualquer outro arquivo. Se você ainda não tiver feito logon na Segurança de documentos, receberá a solicitação para fazê-lo. Ou seja, se estiver sem conexão com a internet e puder abrir o arquivo offline. Se você cancelar o processo de logon, o acesso será negado.
 
 Se você não tiver permissão para abrir o arquivo, será informado de que o acesso é negado. Se os privilégios de acesso a arquivos tiverem sido revogados, você também poderá ser direcionado para uma versão atualizada do arquivo, se disponível. Para obter ajuda adicional caso não consiga abrir um arquivo protegido por política, entre em contato com o editor do arquivo.
 
 Quando um arquivo protegido é aberto, o texto na barra de título que segue o nome do arquivo indica que o arquivo está protegido pela Segurança de documentos do AEM.
 
-Ao abrir um documento protegido do SharePoint Server no Document Security Extension for Microsoft® Office, verifique se o programa do Office associado ao tipo de arquivo, como Word, Excel ou PowerPoint, está aberto. Se você tentar abrir o arquivo sem abrir o aplicativo associado, o documento pode não abrir e uma mensagem de erro indicando que você deve instalar o plug-in aplicável é exibida. Além de abrir o aplicativo necessário, o Adobe recomenda que você limpe a pasta de cache. Faça isso antes de abrir um documento protegido do SharePoint Server no Document Security Extension for Office. Além disso, ao abrir um documento protegido do SharePoint Server, todas as permissões do documento são desativadas, independentemente da política aplicada.
+Ao abrir um documento protegido no Document Security Extension para Microsoft® Office do SharePoint Server, certifique-se de que o programa do Office associado ao tipo de arquivo, como Word, Excel ou PowerPoint, esteja aberto. Se você tentar abrir o arquivo sem abrir o aplicativo associado, o documento pode não abrir e uma mensagem de erro indicando que você deve instalar o plug-in aplicável será exibida. Além de abrir o aplicativo necessário, a Adobe recomenda que você limpe a pasta de cache. Faça isso antes de abrir um documento protegido no Document Security Extension para Office do SharePoint Server. Além disso, ao abrir um documento protegido do SharePoint Server, todas as permissões do documento são desativadas, independentemente da política aplicada.
 
-Dependendo do método de autenticação implementado na Segurança de documentos, talvez seja solicitado que você escolha o método de autenticação ao abrir um documento protegido. Se a Segurança de documentos for compatível com mais de um método de autenticação, as opções de autenticação serão apresentadas a você. Por exemplo, se um servidor de Segurança de documentos fornecer autenticação de nome de usuário/senha e certificado, você poderá escolher o método de autenticação apropriado. Se a autenticação baseada em certificado estiver ativada, você será solicitado a usar o certificado recebido e instalado.
+Dependendo do método de autenticação implementado na Segurança de documentos, talvez seja solicitado que você escolha o método de autenticação ao abrir um documento protegido. Se a Segurança de documentos for compatível com mais de um método de autenticação, as opções de autenticação serão apresentadas a você. Por exemplo, se o servidor da Segurança de documentos fornecer autenticação de nome de usuário/senha e a de certificado, você poderá escolher o método de autenticação apropriado. Se a autenticação baseada em certificado estiver habilitada, você será solicitado a usar o certificado que recebeu e instalou.
 
-A experiência do usuário ao abrir arquivos protegidos depende da configuração de autenticação mútua no servidor. Se somente um certificado de cliente válido estiver instalado, nenhuma caixa de diálogo de autenticação será exibida e os arquivos serão abertos com êxito. No entanto, se vários certificados de cliente estiverem instalados em um computador, uma caixa de diálogo de autenticação será exibida. O usuário deve escolher um certificado válido para abrir o arquivo protegido.
+A experiência do usuário ao abrir arquivos protegidos depende da configuração de autenticação mútua no servidor. Se somente um certificado de cliente válido estiver instalado, nenhuma caixa de diálogo de autenticação será exibida e os arquivos serão abertos. No entanto, se vários certificados de cliente estiverem instalados em um computador, uma caixa de diálogo de autenticação será exibida. O usuário deve escolher um certificado válido para abrir o arquivo protegido.
 
 ### Remoção da proteção por política de um arquivo {#removing-policy-protection-from-a-file}
 
-Se você tiver permissão, poderá remover a proteção por política dos arquivos protegidos. Ao fazer isso, o arquivo não estará mais protegido pela Segurança de documentos.
+Se você tiver permissão, poderá remover a proteção por política dos arquivos que você protegeu. Ao fazer isso, o arquivo não estará mais protegido pela Segurança de documentos.
 
 1. Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Remover**.
 
@@ -397,7 +397,7 @@ Se você tiver permissão, poderá remover a proteção por política dos arquiv
 
 ### Exibição de configurações de segurança {#viewing-security-settings}
 
-É possível visualizar as permissões que você tem para o arquivo atual para impressão. Você também pode visualizar permissões para o arquivo atual ao copiar, alterar e acessar offline, juntamente com o período de validade do arquivo.
+É possível exibir as permissões que você tem para o arquivo atual para impressão. Você também pode exibir as permissões do arquivo atual ao copiar, alterar e acessar offline, juntamente com o período de validade do arquivo.
 
 Na Extensão de segurança de documentos para Microsoft® Office 2010, o grupo Status de segurança, na guia Segurança de documentos, exibe suas permissões para o arquivo.
 
@@ -409,29 +409,29 @@ Faça o seguinte:
 
 Se o administrador tiver ativado a funcionalidade de Aplicação automática de política, qualquer documento criado ou editado será automaticamente protegido ao ser salvo.
 
-Se a Aplicação automática de política estiver ativada, o Document Security Extension for Microsoft® Office solicitará que você faça logon no servidor da Segurança de documentos. Digite seu Nome de usuário e Senha para que o servidor possa autenticá-lo. Se você tiver fornecido as credenciais de logon corretas, o documento será salvo e protegido.
+Se a Aplicação automática de política estiver habilitada, o Document Security Extension para Microsoft® Office solicitará que você faça logon no servidor da Segurança de documentos. Digite seu Nome de usuário e Senha para que o servidor possa autenticá-lo. Se você tiver fornecido as credenciais de logon corretas, o documento será salvo e protegido.
 
 >[!NOTE]
 >
->Caso não consiga fazer logon na Segurança de documentos, o documento poderá ou não poderá ser salvo. Essa situação depende de como o administrador configurou a Aplicação automática de política. Consulte o administrador para saber como os documentos são tratados nessa situação.
+>Caso não consiga fazer logon na Segurança de documentos, o documento poderá ou não poderá ser salvo. Isso depende de como a administração configurou a Aplicação automática de política. Consulte a administração para saber como os documentos são tratados nessa situação.
 
 ### Sincronização para acesso offline {#synchronizing-for-offline-access}
 
-As políticas podem permitir que você abra arquivos enquanto estiver offline e não estiver conectado à Segurança de documentos. Você deve ter feito logon anteriormente na Segurança de documentos para estabelecer suas credenciais com o servidor antes de poder trabalhar offline. Se você planeja trabalhar com arquivos offline, o Adobe recomenda sincronizar com a Segurança de documentos. Faça isso antes de se desconectar para garantir que as configurações de política para seus arquivos estejam atualizadas com o servidor. A Adobe também recomenda que você abra o arquivo online uma vez antes de abri-lo offline. Se você não abrir o arquivo online uma vez ou não sincronizá-lo com o servidor, ainda poderá usar arquivos protegidos por política offline. No entanto, o período de concessão offline não deve ter expirado e as configurações de política do arquivo não devem ter sido alteradas desde a última sincronização manual ou automática com o servidor.
+As políticas podem permitir que você abra arquivos enquanto estiver offline e não estiver conectado à Segurança de documentos. Você deve ter feito logon anteriormente na Segurança de documentos para estabelecer suas credenciais com o servidor antes de poder trabalhar offline. Se você planeja trabalhar com arquivos offline, a Adobe recomenda sincronizar com a Segurança de documentos. Faça isso antes de se desconectar para garantir que as configurações de política para seus arquivos estejam atualizadas com o servidor. A Adobe também recomenda que você abra o arquivo online uma vez antes de abri-lo offline. Se você não abrir o arquivo online uma vez ou não sincronizá-lo com o servidor, ainda poderá usar arquivos protegidos por política offline. No entanto, o período de concessão offline não deve ter expirado e as configurações de política do arquivo não devem ter sido alteradas desde a última sincronização manual ou automática com o servidor.
 
 Faça o seguinte:
 
 * Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Sincronizar offline**.
 
-  ***Observação **: o botão Sincronizar offline está disponível mesmo se o usuário não tiver permissão offline para o documento. No entanto, selecionar o botão não faz nada.*
+  ***Observação **: o botão Sincronizar offline está disponível mesmo que o usuário não tenha permissão offline para o documento. No entanto, selecionar esse botão não faz nada.*
 
 ### Trabalho com marcas d&#39;água dinâmicas {#working-with-dynamic-watermarks}
 
 A Extensão de segurança de documentos para Microsoft® Office oferece suporte à inclusão de marcas d&#39;água dinâmicas baseadas em texto em documentos protegidos por políticas. Uma marca d&#39;água dinâmica pode incluir informações que podem mudar, como data, hora, nome de usuário ou nome da política. Se um usuário imprimir um arquivo protegido por política e esse arquivo contiver uma marca d&#39;água dinâmica e a permissão para imprimir, a marca d&#39;água aparecerá na saída.
 
-O Document Security Extension não oferece suporte a recursos avançados de marca d&#39;água. Os recursos avançados de marca d&#39;água incluem coisas como marcas d&#39;água baseadas em PDF, vários elementos em uma marca d&#39;água e opções de formatação de texto. Elas também incluem o intervalo de páginas.
+O Document Security Extension não oferece suporte a recursos avançados de marca d&#39;água. Os recursos avançados de marca d&#39;água incluem marcas d&#39;água baseadas em PDF, vários elementos em uma marca d&#39;água e opções de formatação de texto. Também incluem o intervalo de páginas.
 
-É possível criar uma marca d&#39;água dinâmica usando as páginas da Web de Segurança de documentos. Para obter mais informações, consulte [Ajuda ao usuário final de Segurança de documentos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security).
+É possível criar uma marca d&#39;água dinâmica usando as páginas da web da Segurança de documentos. Para obter mais informações, consulte [Ajuda ao usuário final da Segurança de documentos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security).
 
 A Extensão de segurança para documentos para Microsoft® Office oferece suporte a estes recursos de marca d&#39;água:
 
@@ -453,7 +453,7 @@ A Extensão de segurança para documentos para Microsoft® Office oferece suport
   </tr>
   <tr>
    <td><p>Usar como plano de fundo</p></td>
-   <td><p>O comportamento de exibição de uma marca d'água dinâmica é o mesmo, independentemente de você selecionar Usar como plano de fundo.</p><p>Para o Word 2010 e 2013, a marca d'água dinâmica aparece somente no Layout de impressão e visualização de Pré-visualização de impressão. </p><p>No Excel 2010 e 2013 também, ele aparece nas visualizações de Pré-visualização de impressão e Layout de página.</p></td>
+   <td><p>O comportamento de exibição de uma marca d'água dinâmica é o mesmo, independentemente de você selecionar Usar como plano de fundo.</p><p>Para o Word 2010 e 2013, a marca d'água dinâmica aparece somente no Layout de impressão e na Visualização de impressão. </p><p>No Excel 2010 e 2013, ela é exibida nas visualizações de Layout de página e de impressão.</p></td>
   </tr>
   <tr>
    <td><p>Posição vertical</p></td>
@@ -480,15 +480,15 @@ A Extensão de segurança para documentos para Microsoft® Office oferece suport
 
 ### Acesso às páginas da Web da Segurança de documentos {#opening-the-document-security-web-pages}
 
-É possível abrir as páginas da Web de Segurança de documentos para criar e atualizar suas políticas de usuário e para exibir o status e as informações de auditoria sobre seus arquivos protegidos por política. Você também pode usar as páginas da Web de Segurança de documentos para alterar políticas ou revogar o acesso de um arquivo protegido por política.
+É possível abrir as páginas da web da Segurança de documentos para criar e atualizar suas políticas de usuário e exibir o status e as informações de auditoria sobre seus arquivos protegidos por política. Você também pode usar as páginas da web da Segurança de documentos para alterar políticas ou revogar o acesso de um arquivo protegido por política.
 
 Para abrir as páginas da Web de Segurança de documentos, no Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Criar e gerenciar políticas**. Caso ainda não tenha fornecido as informações de logon, o navegador será aberto na página de logon do servidor.
 
 ### Alteração de políticas {#changing-policies}
 
-Se você tiver permissões, normalmente como administrador de Segurança de documentos ou editor de arquivos, poderá aplicar uma política diferente a um arquivo ou alterar as configurações da política aplicada no momento.
+Se você tiver permissões, normalmente como administrador da Segurança de documentos ou editor de arquivos, poderá aplicar uma política diferente a um arquivo ou alterar as configurações da política aplicada no momento.
 
-Para alterar as configurações de uma política, use as páginas da Web de Segurança de documentos.
+Para alterar as configurações de uma política, use as páginas da web da Segurança de documentos.
 
 1. Faça o seguinte:
 
@@ -498,25 +498,25 @@ Para alterar as configurações de uma política, use as páginas da Web de Segu
 
 ### Revogação de privilégios de acesso a arquivos {#revoking-file-access-privileges}
 
-É possível revogar a capacidade de abrir arquivos protegidos. Ao revogar o acesso a arquivos, você pode especificar uma mensagem quando os usuários tentarem abri-la e fornecer um URL para uma versão atualizada se a substituir por uma cópia revisada.
+É possível revogar a capacidade de abrir arquivos protegidos. Ao revogar o acesso ao arquivo, você pode especificar uma mensagem quando os usuários tentarem abri-lo e fornecer um URL para uma versão atualizada se for substituí-lo por uma cópia revisada.
 
 1. Faça o seguinte:
 
    * Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Revogar**.
 
-   As páginas da Web de Segurança de documentos abrem a página Revogar documentos.
+   As páginas da web da Segurança de documentos abrirão a página Revogar documentos.
 
 1. Especifique uma mensagem para exibir e, se disponível, um URL para a versão atualizada, e clique em **OK**.
 
-Para obter mais informações sobre revogar privilégios de acesso a arquivos, consulte [Ajuda ao usuário final de Segurança de documentos](https://help.adobe.com/pt_BR/AEMForms/6.1/RMHelp/).
+Para obter mais informações sobre revogar privilégios de acesso a arquivos, consulte [Ajuda ao usuário final de Segurança de documentos](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
-Os privilégios de acesso podem ser restabelecidos por meio das páginas da Web de Segurança de documentos.
+Os privilégios de acesso podem ser reativados pelas páginas da web da Segurança de documentos.
 
 ### Exibição do histórico de auditoria de arquivos {#viewing-the-file-audit-history}
 
 A Segurança de documentos pode salvar o histórico de auditoria de arquivos protegidos por política para que você possa auditar as ações que os usuários executam em seus arquivos.
 
-Os eventos auditados para arquivos do Word, Excel e PowerPoint incluem o seguinte:
+Os eventos auditados para arquivos do Word, Excel e PowerPoint incluem:
 
 **Proteger uma nova política** de documento aplicada a um arquivo
 
@@ -540,7 +540,7 @@ Os eventos auditados para arquivos do Word, Excel e PowerPoint incluem o seguint
 
 Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Histórico de auditoria**.
 
-As páginas da Web de Segurança de documentos abrem a página Eventos, que exibe eventos auditados para o arquivo atual.
+As páginas da web da Segurança de documentos abrirão a página Eventos, que exibe eventos auditados para o arquivo atual.
 
 ### Recursos restritos do Microsoft® Office {#microsoft-office-restricted-features}
 
@@ -567,7 +567,7 @@ Se um arquivo protegido por política que não permite que o usuário faça alte
 
 #### Limitações do Word 2010 e do Word 2013 {#word-2010-and-word-2013-restrictions}
 
-Quando você abre um arquivo protegido por política no Word, as informações de recuperação automática de arquivo não podem ser salvas até que você feche e reinicie o Word. Além disso, os recursos listados abaixo são limitados nas situações descritas:
+Ao abrir um arquivo protegido por política no Word, as informações de recuperação automática de arquivos não podem ser salvas até que você feche e reinicie o Word. Além disso, os recursos listados abaixo são limitados nas situações descritas:
 
 **Arquivo > Novo > Novo a partir de existente** Disponível, mas os arquivos criados usando esse comando enquanto qualquer arquivo protegido por política estiver aberto não poderão ser salvos. O conteúdo no novo arquivo não pode ser copiado para outro arquivo.
 
@@ -579,7 +579,7 @@ Quando você abre um arquivo protegido por política no Word, as informações d
 
 **Arquivo > Salvar e Enviar** Todas as opções indisponíveis durante uma sessão protegida.
 
-**Arquivo > Informações > Documento do Protect > Criptografar com senha, Adicionar assinatura digital, Marcar como final, Restringir permissão por pessoas** Indisponível durante uma sessão protegida.
+**Arquivo > Informações > Proteger documento > Criptografar com senha, Adicionar assinatura digital, Marcar como final, Restringir permissão de pessoas** Indisponíveis durante uma sessão protegida.
 
 **Arquivo > Fluxos de trabalho** Indisponível durante uma sessão protegida.
 
@@ -603,9 +603,9 @@ Quando você abre um arquivo protegido por política no Word, as informações d
 
 **Revisar > Revisão > Thesaurus** Restrito pela permissão Copiar. Indisponível se copiar não for permitido.
 
-**Revisar > Idioma > Traduzir > Traduzir documento** Habilitado com a permissão Copiar.
+**Revisar > Idioma > Traduzir > Traduzir documento** Habilitado com permissão Copiar.
 
-**Revisar > Idioma > Traduzir > Traduzir Texto Selecionado** Habilitado com a permissão Copiar.
+**Revisar > Idioma > Traduzir > Traduzir texto selecionado** Habilitado com permissão Copiar.
 
 **Revisar > Idioma > Traduzir > Minitradutor** Habilitado com a permissão Copiar.
 
@@ -615,7 +615,7 @@ Quando você abre um arquivo protegido por política no Word, as informações d
 
 **Revisar > Proteger > Restringir edição** Indisponível durante uma sessão protegida.
 
-**Exibir > Macros** A permissão Copiar restringe algumas macros, tornando-as indisponíveis, a menos que copiar seja permitido.
+**Exibir > Macros** A permissão Copiar restringe alguns macros, tornando-os indisponíveis, a menos que a cópia seja permitida.
 
 **Suplementos** Não é possível adicionar ou remover suplementos durante uma sessão protegida.
 
@@ -629,9 +629,9 @@ Quando você abre um arquivo protegido por política no Word, as informações d
 
 **Painel do documento** Indisponível durante uma sessão protegida.
 
-**Desenvolvedor > Modelo de documento** Indisponível durante uma sessão protegida. Para acessar esse comando, selecione Arquivo > Opções > Personalizar > Guia Desenvolvedor > Modelos > Modelo de documento.
+**Desenvolvedor > Modelo de documento** Indisponível durante uma sessão protegida. Para acessar esse comando, selecione Arquivo > Opções > Personalizar > Guia desenvolvedor > Modelos > Modelo de documento.
 
-**Contorno > Documento principal > Criar subdocumento, Inserir subdocumento** Indisponível durante uma sessão protegida.
+**Esboço > Documento principal > Criar subdocumento, Inserir subdocumento** Indisponível durante uma sessão protegida.
 
 #### Limitações do Excel 2010 e Excel 2013 {#excel-2010-and-excel-2013-restrictions}
 
@@ -681,7 +681,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Inserir> Texto > Cabeçalho e rodapé** Limitado pela permissão Alterar. Indisponível para um documento protegido por política.
 
-**Dados > Obter Dados Externos** Não é possível importar os dados de arquivos protegidos por política.
+**Dados > Obter dados externos** Os dados de arquivos protegidos por políticas não podem ser importados.
 
 **Dados > Contorno > Subtotais** Limitado pela permissão Alterar.
 
@@ -703,13 +703,13 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Revisar > Alterações > Permitir que os usuários editem intervalos** Indisponível durante uma sessão protegida.
 
-**Revisar > Alterações > Controlar alterações > Realçar alterações** Indisponível para um arquivo protegido por política que contém uma marca d&#39;água dinâmica.
+**Revisar > Alterações > Controlar alterações > Destacar alterações** Indisponível para um arquivo protegido por política que contém uma marca d&#39;água dinâmica.
 
 **Visualização > Macros** Limitado pela permissão Alterar.
 
 **Visualização > Salvar espaço de trabalho** O comando não funciona.
 
-**Desenvolvedor > XML > Pacotes de Expansão** A permissão Copiar restringe algumas macros, tornando-as indisponíveis, a menos que você permita a cópia.
+**Desenvolvedor > XML > Pacotes de expansão** A permissão Copiar restringe alguns macros, tornando-os indisponíveis, a menos que você permita a cópia.
 
 **Fórmulas > Auditoria de fórmulas > Verificação de erros** Restrito pela permissão Alterar. Indisponível, a menos que a alteração seja permitida.
 
@@ -717,7 +717,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Salvar informações de recuperação automática** Indisponível durante uma sessão protegida.
 
-***Observação **: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger Planilha para remover a proteção.*
+***Observação **: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger planilha para remover a proteção.*
 
 #### Restrições do PowerPoint 2010 e PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
@@ -733,9 +733,9 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Arquivo > Salvar e Enviar** Indisponível durante uma sessão protegida.
 
-**Arquivo > Informações > Apresentação do Protect > Criptografar com senha, Adicionar uma assinatura digital, Marcar como final, Restringir permissão por pessoas** Indisponível durante uma sessão protegida.
+**Arquivo > Informações > Proteger apresentação > Criptografar com senha, Adicionar uma assinatura digital, Marcar como final, Restringir permissão de pessoas** Indisponível durante uma sessão protegida.
 
-**Arquivo > Opções do PowerPoint > Salvar informações de recuperação automática** Indisponível durante uma sessão protegida.
+**Arquivo > Opções do PowerPoint > Salvar informações de recuperação automática** Indisponível durante uma sessão protegida.
 
 **Arquivo > Servidor > Menu tarefas do servidor de arquivos** Indisponível durante uma sessão protegida.
 
@@ -745,13 +745,13 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Início > Área de transferência > Colar especial** Limitado pela permissão Alterar.
 
-**Página Inicial > Slides > Novos Slides > Slides da Estrutura de Tópicos, Reutilizar Slides** Indisponível durante uma sessão protegida.
+**Página inicial > Slides > Novos slides > Slides do esboço, Reutilizar slides** Indisponível durante uma sessão protegida.
 
 **Inserir > Texto > Objeto** Indisponível durante uma sessão protegida. Arquivos protegidos por política não podem ser inseridos a qualquer momento.
 
-**Design > Plano de Fundo > Estilos de Plano de Fundo, Ocultar Gráficos de Plano de Fundo, Formatar Plano de Fundo** Indisponível para um arquivo protegido por política que contém uma marca d&#39;água dinâmica.
+**Design > Plano de fundo > Estilos de plano de fundo, Ocultar gráficos de plano de fundo, Formatar plano de fundo** Indisponível para um arquivo protegido por política que contém uma marca d&#39;água dinâmica.
 
-**Apresentação de Slides > Configuração > Gravar Apresentação de Slides** Restrito por permissão de alteração.
+**Apresentação de slides > Configurar > Gravar apresentação de slides** Restrito pela permissão de alteração.
 
 **Revisar > Revisão > Thesaurus** Restrito pela permissão Copiar.
 
@@ -761,7 +761,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Visualização > Visualizações de apresentação > Apresentação de slides** Restrito pela permissão Alterar. Se as alterações não forem permitidas, as apresentações de slides não poderão ser exibidas se o arquivo tiver sido modificado.
 
-**Exibir > Macros** A permissão Copiar restringe algumas macros, tornando-as indisponíveis, a menos que copiar seja permitido.
+**Exibir > Macros** A permissão Copiar restringe alguns macros, tornando-os indisponíveis, a menos que a cópia seja permitida.
 
 **Suplementos** Não é possível adicionar ou remover suplementos durante uma sessão protegida.
 
@@ -775,8 +775,8 @@ Os recursos listados abaixo são limitados nas situações descritas:
 * Autenticação estendida usando um URL personalizado
 * Fluxo de trabalho padrão de autenticação estendida com provedores de identidade de terceiros configurados no servidor do AEM Forms no JEE
 * Fluxo de trabalho personalizado de autenticação estendida com provedores de identidade de terceiros configurados no servidor do AEM Forms no JEE
-* Autenticação estendida usando uma página personalizada para listar Autenticações SAML
+* Autenticação estendida usando uma página personalizada para listar autenticações SAML
 
 ## Glossário {#glossary}
 
-Para obter informações sobre o LiveCycle e o AEM Forms na terminologia JEE, consulte o [Capítulo 19: glossário](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).
+Para obter informações sobre o LiveCycle e o AEM Forms na terminologia JEE, consulte o [Capítulo 19: glossário](https://helpx.adobe.com/content/dam/help/pt-br/experience-manager/6-5/forms/pdf/using-designer.pdf).

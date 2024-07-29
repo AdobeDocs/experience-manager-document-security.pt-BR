@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
 source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1010'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ ht-degree: 73%
 >
 >O documento usa os seguintes termos alternadamente:
 >
->* Adobe Experience Manager Document Security for Microsoft Office
->* Extensão de segurança de documentos do Adobe Experience Manager para Microsoft Office
->* Document Security Extension for Microsoft Office
+>* Segurança de documentos do Adobe Experience Manager para Microsoft Office
+>* Adobe Experience Manager Document Security Extension para Microsoft Office
+>* Document Security Extension para Microsoft Office
 
 ## Instalação e configuração da Extensão de Segurança de Documentos do AEM para Microsoft Office {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Esta versão do Document Security Extension for Microsoft Office é compatível com o Adobe LiveCycle Rights Management ES2 e posterior, e com o complemento Segurança de documentos do AEM Forms.
 
-Examine as informações neste documento antes de instalar o AEM Document Security Extension for Microsoft Office. Para obter instruções detalhadas de instalação, consulte o artigo [Instalação e configuração do AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md).
+Examine as informações neste documento antes de instalar o AEM Document Security Extension for Microsoft Office. Para obter instruções detalhadas de instalação, consulte o artigo [Instalação e configuração do AEM Document Security Extension para Microsoft Office](installing-configuring-aemdsext.md).
 
 ## Problemas corrigidos {#fixed-issues}
 
-* As cadeias de caracteres são exibidas verticalmente e as quebras de linha incorretas são adicionadas ao conteúdo. (CQ-4201054)
+* As strings são exibidas verticalmente e quebras de linha incorretas são adicionadas ao conteúdo. (CQ-4201054)
 
 ## Problemas conhecidos {#known-issues}
 
 ### Plug-ins de terceiros incompatíveis {#third-party-plug-ins-not-supported}
 
-O AEM Document Security Extension for Microsoft Office não funciona com plug-ins de terceiros. Desinstale todos os plug-ins de terceiros do Microsoft Office antes de instalar o Document Security Extension for Microsoft Office.
+O AEM Document Security Extension for Microsoft Office não funciona com plug-ins de terceiros. Desinstale todos os plug-ins de terceiros do Microsoft Office antes de instalar o Document Security Extension para Microsoft Office.
 
 ### Opções de menu desabilitadas no Microsoft Word, Excel e PowerPoint {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
@@ -76,7 +76,7 @@ No Microsoft Office, as seguintes opções estão indisponíveis durante uma ses
 
 ### Abertura de um documento protegido do SharePoint Server {#opening-a-protected-document-from-sharepoint-server}
 
-Para abrir um documento protegido do SharePoint Server no Document Security Extension for Microsoft Office, primeiro abra o programa associado do Microsoft Office (Word, Excel ou PowerPoint) ou o documento pode não abrir. Uma mensagem de erro é exibida indicando que você deve instalar o plug-in aplicável. Portanto, é recomendável abrir o programa associado do Microsoft Office antes de abrir um documento protegido do SharePoint Server no Document Security Extension for Microsoft Office.
+Para abrir um documento protegido do SharePoint Server no Document Security Extension para Microsoft Office, primeiro abra o programa associado do Microsoft Office (Word, Excel ou PowerPoint) ou o documento pode não abrir. Uma mensagem de erro é exibida indicando que você deve instalar o plug-in aplicável. Portanto, é recomendável abrir o programa associado do Microsoft Office antes de abrir um documento protegido do SharePoint Server no Document Security Extension for Microsoft Office.
 
 (Opcional) É recomendável limpar a pasta de cache antes de abrir um documento protegido do SharePoint Server no Document Security Extension for Microsoft Office.
 
@@ -84,7 +84,7 @@ Ao abrir um documento protegido do SharePoint Server, todas as permissões do do
 
 ### Aplicação de uma política com uma marca d&#39;água dinâmica a um arquivo do Microsoft Excel 2013, 2016 e 2019 sem uma impressora instalada {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
-Aplicar uma política com marca d&#39;água dinâmica a arquivos do Excel 2013, 2016 ou 2019 em um computador sem impressoras instaladas resulta no erro: &quot;Erro interno ao aplicar marca d&#39;água dinâmica.&quot; Esse erro também aparece ao reabrir o arquivo protegido. A marca d&#39;água não é aplicada e não é visível em Visualização > Layout da página.
+Aplicar uma política com marca d&#39;água dinâmica a arquivos do Excel 2013, 2016 ou 2019 em um computador sem impressoras instaladas resulta no erro: “Erro interno ao aplicar marca d&#39;água dinâmica”. Esse erro também aparece ao reabrir o arquivo protegido. A marca d&#39;água não é aplicada e não é visível em Visualização > Layout da página.
 
 ### Desativação da Prevenção de Execução de Dados do Windows para aplicativos compatíveis do Office {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
@@ -96,7 +96,7 @@ Ao tentar proteger qualquer arquivo compartilhado do Microsoft Office usando a E
 
 ### Inicialização de aplicativos do Office em computadores que contenham a Extensão de Segurança de Documentos para Microsoft Office e McAfee VirusScan {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Para garantir a inicialização tranquila dos aplicativos do Office em um computador com a Segurança de documentos e o McAfee VirusScan (Varredura ao acessar ativada), desative a opção Proteção de sobrecarga de buffer, no console do McAfee VirusScan.
+Para garantir que os aplicativos do Office sejam inicializados sem problemas em um computador que contenha a Segurança de documentos e o McAfee VirusScan (com o On-Access Scan habilitado), desabilite a opção Proteção de sobrecarga de buffer no console do McAfee VirusScan.
 
 ### Instalação da Extensão de Segurança de Documentos para Microsoft Office em computadores com um idioma não compatível do Microsoft Office {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
@@ -108,7 +108,7 @@ O botão Sincronizar offline está disponível mesmo se o usuário não tiver pe
 
 ### Não há suporte para versões de avaliação do Microsoft Office {#no-support-for-trial-versions-of-microsoft-office}
 
-O Document Security Extension for Microsoft Office não é compatível com versões de avaliação do Microsoft Office. Antes de instalar a extensão, verifique se você instalou uma cópia licenciada do Microsoft Office e se ela está ativada.
+O Document Security Extension para Microsoft Office não é compatível com versões de avaliação do Microsoft Office. Antes de instalar a extensão, verifique se você instalou uma cópia licenciada do Microsoft Office e se ela está ativada.
 
 ### Não é possível abrir arquivos protegidos do Microsoft Office {#unable-to-open-a-protected-microsoft-office-files}
 
@@ -116,14 +116,14 @@ Se a visualização protegida do Microsoft Office estiver habilitada, a Extensã
 
 ### Células com uma imagem ou uma cor de fundo de uma planilha do Microsoft Excel aparecem sobre a marca d&#39;água {#cells-of-microsoft-excel-document-containing-an-image-or-background-color-appear-on-top-of-watermark}
 
-Se uma célula em um documento do Excel tiver uma imagem ou cor de plano de fundo e uma marca d&#39;água dinâmica for aplicada, a imagem ou cor cobrirá a marca d&#39;água. Essa abordagem significa que a marca d&#39;água é coberta pela imagem ou cor do plano de fundo na célula.
+Se uma célula em um documento do Excel tiver uma imagem ou cor de fundo e uma marca d&#39;água dinâmica for aplicada, a imagem ou cor cobrirá a marca d&#39;água. Essa abordagem significa que a marca d&#39;água é coberta pela imagem ou cor de fundo na célula.
 
 ### Problema de usabilidade com vários certificados {#usability-issue-with-multiple-certificates}
 
-Se houver vários certificados no computador cliente e o usuário cancelar a caixa de diálogo de seleção de certificado, a caixa de diálogo será exibida novamente. O usuário precisa cancelar a caixa de diálogo duas vezes.
+Se houver vários certificados no computador cliente e a caixa de diálogo de seleção de certificado for cancelada, ela será exibida novamente. A caixa de diálogo precisa ser cancelada duas vezes.
 
 ### Microsoft PowerPoint permite a edição de documentos protegidos {#microsoft-powerpoint-allows-editing-protected-documents}
 
-Ao tentar editar um documento protegido, o Microsoft PowerPoint exibe a mensagem: &quot;Você não tem permissão para modificar esse documento. Não é possível salvar as alterações.&quot; Após fechar a mensagem, os usuários podem continuar a adicionar texto ou editar o documento. Mas as mudanças feitas nos documentos protegidos não são salvas.
+Ao tentar editar um documento protegido, o Microsoft PowerPoint exibe a mensagem: “Você não tem permissão para modificar esse documento. Não é possível salvar as alterações.” Após fechar a mensagem, os usuários podem continuar a adicionar texto ou editar o documento. Mas as mudanças feitas nos documentos protegidos não são salvas.
 
 O comportamento mencionado acima ocorre PowerPoint 2013, PowerPoint 2016 e PowerPoint 2019.
