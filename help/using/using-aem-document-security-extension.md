@@ -423,7 +423,7 @@ Faça o seguinte:
 
 * Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Sincronizar offline**.
 
-  ***Observação **: o botão Sincronizar offline está disponível mesmo que o usuário não tenha permissão offline para o documento. No entanto, selecionar esse botão não faz nada.*
+  ***Observação &#x200B;**: o botão Sincronizar offline está disponível mesmo que o usuário não tenha permissão offline para o documento. No entanto, selecionar esse botão não faz nada.*
 
 ### Trabalho com marcas d&#39;água dinâmicas {#working-with-dynamic-watermarks}
 
@@ -583,7 +583,7 @@ Ao abrir um arquivo protegido por política no Word, as informações de recuper
 
 **Arquivo > Fluxos de trabalho** Indisponível durante uma sessão protegida.
 
-***Observação **: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
+***Observação &#x200B;**: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
 
 **Postagem de blog > Publicar** Indisponível durante uma sessão protegida.
 
@@ -655,7 +655,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Arquivo > Fluxos de trabalho** Indisponível durante uma sessão protegida.
 
-***Observação **: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
+***Observação &#x200B;**: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
 
 **Arquivo > Servidor > Menu tarefas do servidor de arquivos** Indisponível durante uma sessão protegida.
 
@@ -717,7 +717,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Salvar informações de recuperação automática** Indisponível durante uma sessão protegida.
 
-***Observação **: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger planilha para remover a proteção.*
+***Observação &#x200B;**: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger planilha para remover a proteção.*
 
 #### Restrições do PowerPoint 2010 e PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
