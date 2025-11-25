@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 100%
@@ -29,9 +29,9 @@ A documentação do AEM abrange casos de uso padrão. Casos de uso que não se e
 
 ### A Adobe geralmente não documenta erros e suas soluções.
 
-A documentação do AEM abrange casos de uso padrão. Por esse motivo, bugs, efeitos causados por bugs e soluções alternativas para bugs não são documentados.
+A documentação do AEM abrange casos de uso padrão. Por esse motivo, erros, efeitos causados por erros e soluções alternativas para erros não são documentados.
 
-As exceções a esta regra se aplicam às notas de versão, em que os problemas conhecidos podem ser listados com possíveis soluções aprovadas pelo gerenciamento de produtos.
+As exceções a esta regra aplicam-se às notas de versão, em que os problemas conhecidos podem ser listados com possíveis soluções aprovadas pela gerência de produtos.
 
 ### As contribuições à documentação não se destinam a responder perguntas técnicas.
 

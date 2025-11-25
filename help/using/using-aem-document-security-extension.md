@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ Execute as seguintes etapas para habilitar a autenticação estendida com o URL 
 1. Abra a interface do Administrador do AEM Forms.
 1. Navegue até Serviços > Segurança de documentos > Configuração > Configuração do servidor.
 1. Ative a opção Permitir autenticação estendida.
-1. Especifique o URL padrão URL de Aterrissagem da Autenticação Estendida. O URL padrão é http://localhost:8080/edc/extendedauthentication/welcome.jsp.
+1. Especifique o URL padrão URL de Aterrissagem da Autenticação Estendida. A URL padrão é http://localhost:8080/edc/extendedauthentication/welcome.jsp.
 
    Clique em **[!UICONTROL Salvar]**.
 
@@ -126,7 +126,7 @@ Você pode criar um pacote personalizado da página de autenticação em um arqu
 * A página de autenticação deve enviar o nome de usuário como j_username e a senha como j_password. A página também deve enviar o source_url e o login_url como parâmetros ocultos.
 * Na autenticação bem-sucedida, a página deve fechar automaticamente.
 
-Para ativar a autenticação estendida com um URL de destino personalizado:
+Para habilitar a autenticação estendida com um URL de destino personalizado:
 
 1. Implante o arquivo WAR de autenticação personalizada no servidor do AEM Forms.
 1. Abra a interface do Administrador do AEM Forms.
@@ -373,7 +373,7 @@ Se um recurso não estiver disponível, o nome do comando no menu e o botão da 
 
 É possível abrir arquivos protegidos por política usando os mesmos métodos usados para abrir qualquer outro arquivo. Se você ainda não tiver feito logon na Segurança de documentos, receberá a solicitação para fazê-lo. Ou seja, se estiver sem conexão com a internet e puder abrir o arquivo offline. Se você cancelar o processo de logon, o acesso será negado.
 
-Se você não tiver permissão para abrir o arquivo, será informado de que o acesso é negado. Se os privilégios de acesso a arquivos tiverem sido revogados, você também poderá ser direcionado para uma versão atualizada do arquivo, se disponível. Para obter ajuda adicional caso não consiga abrir um arquivo protegido por política, entre em contato com o editor do arquivo.
+Se você não tiver permissão para abrir o arquivo, será informado de que o acesso é negado. Se os privilégios de acesso a arquivos forem revogados, você também poderá ser direcionado para uma versão atualizada do arquivo, se disponível. Para obter ajuda adicional caso não consiga abrir um arquivo protegido por política, entre em contato com o editor do arquivo.
 
 Quando um arquivo protegido é aberto, o texto na barra de título que segue o nome do arquivo indica que o arquivo está protegido pela Segurança de documentos do AEM.
 
@@ -405,15 +405,15 @@ Faça o seguinte:
 
 * Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, no grupo **Status de segurança**, clique em qualquer item.
 
-### Salvamento de documentos quando a Aplicação automática de política estiver ativada {#saving-documents-when-auto-apply-policy-is-enabled}
+### Salvamento de documentos quando a Aplicação automática de política estiver habilitada {#saving-documents-when-auto-apply-policy-is-enabled}
 
-Se o administrador tiver ativado a funcionalidade de Aplicação automática de política, qualquer documento criado ou editado será automaticamente protegido ao ser salvo.
+Se o administrador tiver ativado a funcionalidade de política aplicada automaticamente, qualquer documento que você criar ou editar será automaticamente protegido ao ser salvo.
 
-Se a Aplicação automática de política estiver habilitada, o Document Security Extension para Microsoft® Office solicitará que você faça logon no servidor da Segurança de documentos. Digite seu Nome de usuário e Senha para que o servidor possa autenticá-lo. Se você tiver fornecido as credenciais de logon corretas, o documento será salvo e protegido.
+Se a Política aplicada automaticamente estiver ativada, o Document Security Extension for Microsoft® Office solicitará que você faça logon no servidor da Segurança de documentos. Digite seu Nome de usuário e Senha para que o servidor possa autenticá-lo. Se você tiver fornecido as credenciais de logon corretas, o documento será salvo e protegido.
 
 >[!NOTE]
 >
->Caso não consiga fazer logon na Segurança de documentos, o documento poderá ou não poderá ser salvo. Isso depende de como a administração configurou a Aplicação automática de política. Consulte a administração para saber como os documentos são tratados nessa situação.
+>Caso não consiga fazer logon na Segurança de documentos, o documento poderá ou não poderá ser salvo. Essa situação depende de como o administrador configurou a política aplicada automaticamente. Consulte a administração para saber como os documentos são tratados nessa situação.
 
 ### Sincronização para acesso offline {#synchronizing-for-offline-access}
 
@@ -555,7 +555,7 @@ Se um comando não estiver disponível, o nome do comando no menu e o botão da 
 >Aplicar uma política a um arquivo que contenha um link para um arquivo incorporado não aplica a política ao arquivo vinculado. A Segurança de documentos para Microsoft® Office não estende a proteção a arquivos vinculados.
 
 * Arquivos do Word, Excel e PowerPoint protegidos por política estão impedidos de abrir em uma janela do navegador Internet Explorer.
-* Os usuários aos quais foi concedida somente a permissão Alterar não podem copiar o conteúdo para um arquivo de outro aplicativo usando a Área de transferência do Windows. Os usuários podem copiar conteúdo para arquivos, ativando a opção Área de transferência do Microsoft® Office.
+* Os usuários aos quais foi concedida somente a permissão Alterar não podem copiar o conteúdo para um arquivo de outro aplicativo usando a Área de transferência do Windows. Os usuários podem copiar conteúdo para arquivos, habilitando a opção Área de transferência do Microsoft® Office.
 * Abrir um arquivo protegido por política no Microsoft® Office torna a tecla Print Screen indisponível até que você feche o aplicativo ou a sessão expire.
 * A Segurança de documentos para Microsoft® Office não é compatível com a criação e controle de versão baseado na Web (WebDAV). Geralmente, não é possível abrir um arquivo protegido por política a partir de uma pasta WebDAV. Se você puder abrir um arquivo protegido por política, não terá permissões para salvar, imprimir, alterar ou copiar do arquivo.
 

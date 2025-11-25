@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre a Segurança de d
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home&amp;lang=pt-BR#support">Suporte técnico da Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=pt-BR#support">Suporte técnico da Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>

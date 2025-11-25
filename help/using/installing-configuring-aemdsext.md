@@ -1,19 +1,19 @@
 ---
-title: Instalação e configuração do AEM Document Security Extension for Microsoft Office
+title: Instalar e configurar o AEM Document Security Extension for Microsoft Office
 description: Este documento orienta você na instalação e configuração do Adobe Experience Manager Document Security Extension 6.2 for Microsoft Office.
 uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Instalação e configuração do AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# Instalar e configurar o AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Este documento orienta você na instalação e configuração do Adobe Experience Manager Document Security Extension para Microsoft Office.
 
@@ -56,7 +56,7 @@ Utilize as seguintes configurações mínimas recomendadas para a instalação d
 
 * Versões de 32 ou 64 bits do Microsoft Office 2019 Professional Plus no Microsoft Windows 11 em inglês, francês, alemão, japonês, italiano, espanhol, português do Brasil, coreano, chinês simplificado ou chinês tradicional.
 
-* Versões de 32 ou 64 bits do Microsoft Windows 10 em inglês, francês, alemão, japonês, italiano, espanhol, português do Brasil, coreano, chinês simplificado ou chinês tradicional.
+* Versões de 32 ou 64 bits do Microsoft Windows 10 em inglês, francês, alemão, japonês, italiano, espanhol, brasileiro, português, coreano, chinês simplificado ou chinês tradicional.
 
   **Observação:** o *Document Security Extension para Microsoft Office também deve funcionar em dispositivos Microsoft Surface.*
 
@@ -72,7 +72,7 @@ Utilize as seguintes configurações mínimas recomendadas para a instalação d
 
 Para usar o Document Security Extension, certifique-se de que é possível se conectar ao Adobe LiveCycle Rights Management ES2 e posterior ou ao complemento Segurança de documentos para o AEM 6.0 Forms ou posterior.
 
-## Instalação do Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
+## Instalar o Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
 
 Você pode baixar o instalador na [página de download](download-installer.md). Não é possível personalizar o arquivo executável do instalador diretamente, mas ele pode ser instalado interativamente ou no modo silencioso. Para instalar o software, faça logon no Windows como administrador.
 
@@ -98,7 +98,7 @@ O instalador também está disponível como um arquivo MSI, que pode ser usado p
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## Pré-configuração do instalador para conexão com o Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## Pré-configurar o instalador para conexão com o Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 É possível pré-configurar o instalador do Document Security Extension para Microsoft Office e apontar para um servidor do AEM ou LiveCycle. Isso garante que quem venha a instalar o Document Security Extension para Microsoft Office possa usar os recursos sem configurar uma conexão. Dessa forma, os usuários podem abrir documentos protegidos sem a necessidade de configuração. No entanto, eles não poderão proteger novos documentos até que configurem o cliente para usar um determinado servidor.
 
@@ -182,13 +182,13 @@ Como parte da configuração, você pode definir a aplicação automática de um
 * Proteger todos os documentos com uma política padrão.
 * Permita que os usuários salvem opcionalmente um arquivo em um formato desprotegido quando não conseguirem se conectar ao servidor. Esta flexibilidade permite que você considere casos em que os usuários estão criando documentos enquanto estão desconectados da rede (por exemplo, enquanto estiverem em um avião).
 
-Depois de ativar o recurso de aplicação automática de política, o documento é protegido com a política padrão nos seguintes casos:
+Depois de ativar o recurso de política aplicada automaticamente, o documento é protegido com a política padrão nos seguintes casos:
 
 * O usuário edita e salva um documento recém-criado
 * O usuário edita e salva um documento desprotegido
 * O usuário inicia um aplicativo que abre com um documento padrão, o edita e depois salva
 
-### Configuração do recurso de aplicação automática de política no arquivo MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configuração do recurso de política aplicada automaticamente no arquivo MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Antes de começar, pré-configure o instalador para apontar para o seu servidor do AEM Forms ou LiveCycle, conforme descrito anteriormente neste artigo.
 
@@ -209,12 +209,12 @@ Antes de começar, pré-configure o instalador para apontar para o seu servidor 
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>Habilite ou desabilite o recurso de aplicação automática de política.</p> <p><code>1</code>: Ativar</p> <p>0: Desativar</p> </td>
+   <td><p>Ative ou desative o recurso de política aplicada automaticamente.</p> <p><code>1</code>: Habilitar</p> <p>0: Desativar</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>O GUID da política a ser usado quando novos documentos forem salvos. Este valor se aplica ao recurso de aplicação automática de política.</p> </td>
+   <td><p>O GUID da política a ser usado quando novos documentos forem salvos. Esse valor se aplica ao recurso de política aplicada automaticamente.</p> </td>
    <td><p>ID de política hexadecimal conforme visível no servidor RM</p> </td>
   </tr>
   <tr>
@@ -245,16 +245,16 @@ Antes de começar, pré-configure o instalador para apontar para o seu servidor 
    >
    >Uma prática comum é usar o mesmo nome de arquivo MSI original (por exemplo, `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Habilitação de proteção automática de novos documentos {#enabling-automatic-protection-of-new-documents}
+## Habilitar proteção automática de novos documentos {#enabling-automatic-protection-of-new-documents}
 
-O administrador pode habilitar a capacidade de proteger automaticamente qualquer documento salvo por um usuário. O administrador configura o recurso de Aplicação automática de política no programa de instalação do Document Security Extension for Microsoft Office.
+O administrador pode habilitar a capacidade de proteger automaticamente qualquer documento salvo por um usuário. O administrador configura o recurso de política aplicada automaticamente no programa de instalação do Document Security Extension for Microsoft Office.
 
-Se a Aplicação automática de política estiver habilitada, todos os documentos salvos pelo usuário serão protegidos com a política padrão. Esta ação se aplica nas seguintes situações:
+Se a política aplicada automaticamente estiver ativada, todos os documentos salvos pelo usuário serão protegidos com a política padrão. Esta ação se aplica nas seguintes situações:
 
 * Quando um usuário cria um novo documento, o edita e o salva.
 * Quando um usuário abre um documento desprotegido, o edita e o salva.
 
-Para obter informações sobre como configurar a Aplicação automática de política, consulte [Configurar uma aplicação automática da política padrão](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
+Para obter informações sobre como configurar a política aplicada automaticamente, consulte [Configurar uma aplicação automática da política padrão](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
 ## Habilitar a interface sem faixa de opções {#enable-ribbon-less-user-interface}
 
@@ -264,7 +264,7 @@ Você pode habilitar/desabilitar a interface sem faixa de opções modificando a
 1. No Editor de Registro, navegue até HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 ou HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Crie um novo valor Dword (32 bits) chamado **HidePluginUI**.
 
-1. Defina o valor da propriedade **HidePluginUI** como 1 para ativar a interface sem faixa de opções.
+1. Defina o valor da propriedade **HidePluginUI** como 1 para habilitar a interface sem faixa de opções.
 
 1. Feche o Editor de registro.
 
@@ -304,7 +304,7 @@ Um usuário pode tentar abrir o documento protegido em um computador que não te
 
 ### Estrutura do arquivo CommonResources.dll {#structure-of-the-commonresources-dll-file}
 
-O arquivo CommonResources.dll contém informações sobre os modelos de recursos. Ele contém dois identificadores de nome: TEMPLATE_FILE e RT_MANIFEST. Para ativar uma página de capa personalizada, o identificador de nome TEMPLATE_FILE é modificado. O identificador de nome TEMPLATE_FILE tem seis recursos:
+O arquivo CommonResources.dll contém informações sobre os modelos de recursos. Ele contém dois identificadores de nome: TEMPLATE_FILE e RT_MANIFEST. Para habilitar uma página de capa personalizada, o identificador de nome TEMPLATE_FILE é modificado. O identificador de nome TEMPLATE_FILE tem seis recursos:
 
 <table>
  <tbody>
