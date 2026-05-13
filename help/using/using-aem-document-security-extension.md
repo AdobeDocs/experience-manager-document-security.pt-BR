@@ -1,14 +1,18 @@
 ---
-title: Uso da Extensão de segurança de documentos do AEM para Microsoft® Office
+title: Utilização do AEM Document Security Extension for Microsoft&reg; Office
 description: Controle como os recipients usam seus arquivos protegidos por políticas, independentemente da abrangência da distribuição de arquivos. O documento explica como proteger arquivos e como trabalhar com arquivos protegidos.
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/cI8I72aByEI0tcij2o-QNkGjTxCztTa4uZFXsfwlMVc
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '6139'
+source-wordcount: 6278
 ht-degree: 98%
 
 ---
@@ -98,7 +102,7 @@ Se for necessário acessar as páginas da Web usando a Segurança de documentos 
 
 #### Autenticação estendida usando o URL padrão do AEM Forms {#extended-authentication-using-default-aem-forms-url}
 
-É possível usar o URL padrão do AEM Forms para autenticação estendida. A página de aterrissagem padrão contém a marca Adobe. Além disso, as configurações padrão do AEM Forms são usadas ao utilizar o URL padrão do AEM Forms para autenticação estendida.
+É possível usar o URL padrão do AEM Forms para autenticação estendida. A página de destino padrão contém a marca Adobe. Além disso, as configurações padrão do AEM Forms são usadas ao utilizar o URL padrão do AEM Forms para autenticação estendida.
 
 Execute as seguintes etapas para habilitar a autenticação estendida com o URL padrão de aterrissagem da Adobe:
 
@@ -423,7 +427,7 @@ Faça o seguinte:
 
 * Na Extensão de segurança de documentos para Microsoft® Office 2010 e 2013, na guia **Segurança de documentos**, selecione **Sincronizar offline**.
 
-  ***Observação &#x200B;**: o botão Sincronizar offline está disponível mesmo que o usuário não tenha permissão offline para o documento. No entanto, selecionar esse botão não faz nada.*
+  ***Observação **: o botão Sincronizar offline está disponível mesmo que o usuário não tenha permissão offline para o documento. No entanto, selecionar esse botão não faz nada.*
 
 ### Trabalho com marcas d&#39;água dinâmicas {#working-with-dynamic-watermarks}
 
@@ -583,7 +587,7 @@ Ao abrir um arquivo protegido por política no Word, as informações de recuper
 
 **Arquivo > Fluxos de trabalho** Indisponível durante uma sessão protegida.
 
-***Observação &#x200B;**: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
+***Observação **: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
 
 **Postagem de blog > Publicar** Indisponível durante uma sessão protegida.
 
@@ -655,7 +659,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Arquivo > Fluxos de trabalho** Indisponível durante uma sessão protegida.
 
-***Observação &#x200B;**: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
+***Observação **: iniciar um fluxo de trabalho no Word, Excel e PowerPoint 2010 só está disponível nas versões Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 e autônoma 2010.*
 
 **Arquivo > Servidor > Menu tarefas do servidor de arquivos** Indisponível durante uma sessão protegida.
 
@@ -717,7 +721,7 @@ Os recursos listados abaixo são limitados nas situações descritas:
 
 **Salvar informações de recuperação automática** Indisponível durante uma sessão protegida.
 
-***Observação &#x200B;**: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger planilha para remover a proteção.*
+***Observação **: se você tentar alterar uma célula em um arquivo protegido por política sem permissão, o Excel avisará incorretamente que você deve usar o comando Desproteger planilha para remover a proteção.*
 
 #### Restrições do PowerPoint 2010 e PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
