@@ -93,7 +93,7 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre a Segurança de d
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support">Suporte técnico da Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support">Suporte técnico da Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>
